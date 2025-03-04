@@ -212,7 +212,7 @@ try {
                     }
 
                     .btn-primary:hover {
-                        background-color: #0056b3;
+                        background-color: var(--thm-black);
                         /* Couleur bleue plus foncée au survol */
                     }
                     </style>

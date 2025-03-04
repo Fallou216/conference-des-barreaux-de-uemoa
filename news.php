@@ -51,7 +51,7 @@
         <!-- Section principale du slider -->
         <section class="main-slider main-slider-two">
             <div class="main-slider-two-swiper owl-carousel owl-theme">
-                <!-- Slide 1 : Formation des avocats -->
+                <!-- Slide 1 : 3e Congrès des Avocats de l’UEMOA -->
                 <div class="item">
                     <div class="item-slider-bg" style="background-image: url(assets/image/CDBU1.png)">
                     </div>
@@ -60,11 +60,11 @@
                             <div class="col-12 col-md-12 col-lg-12">
                                 <div class="slider-content-two text-center">
                                     <div class="slider-tagline-two">Conférence des Barreaux de l'UEMOA</div>
-                                    <h1 class="section-title">Formation continue <br> pour les avocats</h1>
-                                    <p class="slider-description">La Conférence organise des séminaires et des
-                                        formations pour renforcer les compétences des avocats dans divers domaines du
-                                        droit. Ces formations visent à améliorer la qualité des services juridiques
-                                        offerts dans l'espace UEMOA.</p>
+                                    <h1 class="section-title">3ᵉ Congrès des Avocats de l’UEMOA</h1>
+                                    <p class="slider-description">Le 3ᵉ Congrès des Avocats de l'UEMOA s'est tenu à
+                                        Abidjan, réunissant des avocats des huit pays membres pour évaluer une décennie
+                                        d'harmonisation des pratiques professionnelles.</p>
+                                    <a href="news-details-1.php" class="btn btn-primary">En savoir plus</a>
                                 </div><!-- slider-content-two -->
                             </div><!-- col-12 col-md-12 col-lg-12 -->
                         </div><!-- row -->
@@ -72,7 +72,7 @@
                 </div>
                 <!--item-->
 
-                <!-- Slide 2 : Réformes juridiques -->
+                <!-- Slide 2 : Recommandations pour l'avenir de la profession d'avocat -->
                 <div class="item">
                     <div class="item-slider-bg" style="background-image: url(assets/image/CDBU1.png)"></div>
                     <div class="container">
@@ -80,11 +80,13 @@
                             <div class="col-12 col-md-12 col-lg-12">
                                 <div class="slider-content-two text-center">
                                     <div class="slider-tagline-two">Conférence des Barreaux de l'UEMOA</div>
-                                    <h1 class="section-title">Réformes juridiques <br> pour une justice équitable</h1>
-                                    <p class="slider-description">La Conférence soutient les réformes législatives et
-                                        judiciaires pour un système judiciaire plus efficace et équitable dans les pays
-                                        membres. Ces réformes visent à garantir un accès égal à la justice pour tous les
-                                        citoyens.</p>
+                                    <h1 class="section-title">Recommandations pour l'avenir de la profession d'avocat
+                                    </h1>
+                                    <p class="slider-description">À l'issue du congrès, cinq recommandations clés ont
+                                        été formulées pour améliorer l’exercice de la profession dans l’espace
+                                        communautaire.</p>
+                                    <a href="news-details-2.php" class="btn btn-primary">Découvrir les
+                                        recommandations</a>
                                 </div><!-- slider-content-two -->
                             </div><!-- col-12 col-md-12 col-lg-12 -->
                         </div><!-- row -->
@@ -93,6 +95,7 @@
                 <!--item-->
             </div><!-- main-slider-two-swiper -->
         </section>
+
         <!--main-slider-->
 
         <!-- Section des actualités récentes -->
