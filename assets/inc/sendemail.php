@@ -1,58 +1,55 @@
 <?php
 
-// Define Host Info || Who is sending emails?
-define("HOST_NAME", "TownGov Mailer");
-define("HOST_EMAIL", "towngov@mail.com");
-
-// Define SMTP Credentials || Gmail Informations
-define("SMTP_EMAIL", "mail@gmail.com");
-define("SMTP_PASSWORD", "your_gmail_pass"); // read documentations
-
-
-// Define Recipent Info ||  Who will get this email?
-define("RECIPIENT_NAME", "John Doe");
-define("RECIPIENT_EMAIL", "jhon@mail.com");
-
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-require './PHPMailer/src/Exception.php';
-require './PHPMailer/src/PHPMailer.php';
-require './PHPMailer/src/SMTP.php';
+require 'vendor/autoload.php';
 
-
-
-
-
-//Create an instance; passing `true` enables exceptions
+// Créer une nouvelle instance de PHPMailer
 $mail = new PHPMailer(true);
 
 try {
-	//Server settings
-	$mail->SMTPDebug = 0;                      //Enable verbose debug output
-	$mail->isSMTP();                                            //Send using SMTP
-	$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-	$mail->Username   = SMTP_EMAIL;                     //SMTP username
-	$mail->Password   = SMTP_PASSWORD;                               //SMTP password
-	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-	$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    // Configuration SMTP                           
+    $mail->isSMTP();  
+    $mail->SMTPAuth = true;
+    $mail->Host = 'smtp.gmail.com'; // Serveur SMTP de Gmail
+    $mail->Username = 'falloudioum216@gmail.com'; // Ton adresse email
+    $mail->Password = 'lyrk delw ugkl gckd'; // Ton mot de passe (à ne jamais exposer publiquement)
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Méthode de sécurité (STARTTLS)
+    $mail->Port = 587; // Port pour TLS
+    $mail->CharSet = 'UTF-8'; // Encodage des caractères
 
-	//Recipients
-	$mail->setFrom(HOST_EMAIL, HOST_NAME);
-	$mail->addAddress(RECIPIENT_EMAIL, RECIPIENT_NAME);     //Add a recipient
+    // Options SSL pour ignorer la vérification des certificats
+    $mail->SMTPOptions = array(
+        'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+        )
+    );
 
-	//Content
-	$name = isset($_POST['name']) ? preg_replace("/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name']) : "";
-	$senderEmail = isset($_POST['email']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email']) : "";
-	$phone = isset($_POST['phone']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone']) : "";
-	$services = isset($_POST['services']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['services']) : "";
-	$subject = isset($_POST['subject']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject']) : "";
-	$address = isset($_POST['address']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['address']) : "";
-	$website = isset($_POST['website']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website']) : "";
-	$message = isset($_POST['message']) ? preg_replace("/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message']) : "";
+    // Récupération des données du formulaire
+    $first_name = htmlspecialchars($_POST['first_name']);
+    $last_name = htmlspecialchars($_POST['last_name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $company = htmlspecialchars($_POST['company']);
+    $category = htmlspecialchars($_POST['category']);
+    $message = htmlspecialchars($_POST['message']);
+
+    // Vérification des fichiers joints (s'il y en a)
+    if (isset($_FILES['userfile']) && $_FILES['userfile']['error'] == 0) {
+        $file_tmp_name = $_FILES['userfile']['tmp_name'];
+        $file_name = $_FILES['userfile']['name'];
+
+        // Ajouter le fichier comme pièce jointe
+        $mail->addAttachment($file_tmp_name, $file_name);
+    }
+
+    // Définir l'expéditeur et le destinataire
+    $mail->setFrom('falloudioum216@gmail.com', 'Mirahtec');  // Expéditeur
+    $mail->addAddress('falloudioum216@gmail.com', 'Mamadou Fallou Dioum');  // Destinataire fixe (adresse à laquelle le formulaire sera envoyé)
 
 	$mail->isHTML(true);                                  //Set email format to HTML
 	$mail->Subject = 'A contact request send by ' . $name;

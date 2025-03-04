@@ -48,7 +48,6 @@
                             <li><a href="assemblee-generale.php">Assemblée Générale</a></li>
                             <li><a href="bureau-executif.php">Bureau Exécutif</a></li>
                             <li><a href="commissions.php">Commissions</a></li>
-                            <li><a href="actions.php">Actions et Réalisations</a></li>
                         </ul><!-- list-unstyled -->
                     </div><!-- footer-widget-department -->
                 </div>
@@ -92,4 +91,5 @@
         <p>© 2024 Conférence des Barreaux de l'Espace UEMOA. Tous droits réservés.</p>
     </div><!-- container -->
 </div>
+
 <!--bottom-footer-->

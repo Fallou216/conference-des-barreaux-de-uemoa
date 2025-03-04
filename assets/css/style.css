@@ -41,6 +41,59 @@
 /***********************
 * Variable
 ***********************/
+
+
+.partners-section {
+    padding: 80px 0;
+    background-color: #ffffff; /* Fond blanc pour un design épuré */
+    text-align: center;
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.partner-card {
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-card:hover {
+    transform: scale(1.1); /* Zoom au survol */
+}
+
+.partner-card-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border: 4px solid #ddd;
+}
+
+.partner-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Assure un bon affichage des logos */
+    border-radius: 50%;
+}
+
+.partner-card-content h4 {
+    font-size: 1.2rem;
+    color: #222;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+
 :root{
 	--thm-primary: #2dcd7c;
 	/* #006737 */
@@ -452,7 +505,7 @@ a{
 .topbar-inner{
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--thm-black);
+	background-color: #001F3F;
 	padding-right: 60px;
 }
 .topbar-left{
@@ -653,7 +706,7 @@ a{
 	justify-content: center;
 	display: flex;
 	align-items: center;
-	padding: 33px 20px;
+	padding: 40px 30px;
 	background: #fff;
 }
 @media (max-width: 399px) {
@@ -3717,7 +3770,7 @@ a.search-toggler{
 .footer{
 	background-image: url("../image/bg/footer-bg-1.png");
 	background-repeat: no-repeat;
-	background-color: var(--thm-black);
+	background-color: #001F3F;
 	background-size: auto;
 	background-position: left 20px bottom 90px;
 }
@@ -3729,21 +3782,21 @@ a.search-toggler{
 		padding-bottom: 40px;		
 	}	
 }
-.footer-widget-logo{
+ .footer-widget-logo{
 	padding: 45px 60px;
 	max-width: 250px;
 	align-items: center;
 	color: var(--thm-white);
-	display: inline-block;
-	background-color: var(--thm-dark-black);
-}
+	display: inline-block; 
+	} 
+*/
 .footer-widget-text {
 	margin-top: 32px;
 	margin-bottom: 22px;
 	max-width: 370px;
 }
 .footer-widget-text p{
-	font-size: 20px;
+	font-size: 5px;
 	line-height: 32px;
 	font-weight: 600;
 	color: var(--thm-white);

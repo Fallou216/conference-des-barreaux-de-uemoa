@@ -66,7 +66,7 @@
                     </a><!-- search-toggler -->
                 </div><!-- search-box -->
                 <div class="main-menu-right-button">
-                    <a href="contact.php" class="btn btn-primary">Nous rejoindre</a>
+                    <a href="contact.php" class="btn btn-primary">Nous contacter</a>
                 </div><!-- main-menu-right-button -->
             </div>
             <!--main-menu-right-->
