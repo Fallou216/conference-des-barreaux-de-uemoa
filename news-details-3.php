@@ -54,55 +54,61 @@
         <!--page-banner-->
         <section class="details-section">
             <div class="container">
-                <!-- Détails des recommandations du Congrès 2024 -->
+                <!-- Détails de la Rentrée judiciaire de la Cour de Justice de l’UEMOA -->
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="details-image">
-                            <img src="assets/image/CDBU1.png" class="img-fluid" alt="Recommandations du Congrès 2024">
+                            <img src="assets/image/CDBU1.png" class="img-fluid"
+                                alt="Rentrée judiciaire de la Cour de Justice de l’UEMOA">
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="details-content">
-                            <h2>📜 Cinq recommandations pour l’avenir de la profession d’avocat dans l’UEMOA</h2>
+                            <h2>⚖️ Rentrée judiciaire de la Cour de Justice de l’UEMOA</h2>
                             <p>
-                                Le <strong>21 septembre 2024</strong>, à l’issue du <strong>3ème Congrès des Avocats de
-                                    l’UEMOA</strong>
-                                tenu à <strong>Abidjan</strong>, les participants ont mis en lumière les défis
-                                rencontrés par la profession
-                                d’avocat au sein de l’espace communautaire.
-                            </p>
-                            <p>
-                                Pour garantir une justice plus harmonisée et accessible, cinq recommandations majeures
-                                ont été
-                                adoptées afin d’améliorer l’exercice du métier d’avocat.
+                                Le <strong>20 décembre 2023</strong>, la <strong>Cour de Justice de l’UEMOA</strong> a
+                                organisé son audience
+                                solennelle de rentrée judiciaire à <strong>Ouagadougou</strong>. Cet événement majeur a
+                                réuni des hauts magistrats,
+                                des avocats et des représentants institutionnels pour dresser le bilan des actions de la
+                                Cour et définir les
+                                perspectives pour l’année à venir.
                             </p>
 
-                            <h3>📌 Recommandations clés :</h3>
+                            <h3>📌 Points essentiels abordés :</h3>
                             <ul>
-                                <li><i class="fas fa-balance-scale"></i> <strong>Harmonisation des pratiques juridiques
-                                        :</strong>
-                                    Adoption de normes communes pour unifier les règles professionnelles dans tous les
-                                    pays membres.</li>
-                                <li><i class="fas fa-user-graduate"></i> <strong>Formation continue :</strong>
-                                    Développement de programmes de formation adaptés aux nouvelles exigences du droit.
-                                </li>
-                                <li><i class="fas fa-laptop-code"></i> <strong>Modernisation des outils juridiques
-                                        :</strong>
-                                    Digitalisation des procédures judiciaires et amélioration de l’accès aux bases de
-                                    données juridiques.</li>
-                                <li><i class="fas fa-shield-alt"></i> <strong>Indépendance et protection des avocats
-                                        :</strong>
-                                    Mise en place de garanties pour assurer la sécurité et l’indépendance des avocats.
-                                </li>
+                                <li><i class="fas fa-gavel"></i> <strong>Bilan des affaires traitées :</strong> Analyse
+                                    des décisions rendues
+                                    et des contentieux en cours.</li>
+                                <li><i class="fas fa-balance-scale"></i> <strong>Activités non judiciaires :</strong>
+                                    Évaluation des actions
+                                    de formation et de sensibilisation menées par la Cour.</li>
                                 <li><i class="fas fa-handshake"></i> <strong>Renforcement de la coopération :</strong>
-                                    Instauration d’un cadre de collaboration structuré entre les barreaux des États
-                                    membres.</li>
+                                    Mise en place d’un
+                                    cadre de collaboration plus structuré avec les juridictions nationales.</li>
+                                <li><i class="fas fa-book-open"></i> <strong>Évolution de la jurisprudence :</strong>
+                                    Adaptation aux enjeux
+                                    économiques et juridiques de l’UEMOA.</li>
                             </ul>
 
+                            <h3>🗣️ Discours et interventions</h3>
                             <p>
-                                Ces recommandations constituent une avancée majeure vers une profession plus forte et
-                                mieux adaptée
-                                aux défis contemporains du droit dans l’espace UEMOA.
+                                Lors de l’audience, le <strong>Président de la Cour</strong> a mis l’accent sur
+                                l'importance de la
+                                justice communautaire et a rappelé les efforts déployés pour garantir un meilleur accès
+                                au droit
+                                dans l’espace UEMOA.
+                            </p>
+                            <p>
+                                Des représentants des Barreaux et des institutions partenaires ont également pris la
+                                parole pour
+                                souligner la nécessité d’une justice plus accessible et transparente.
+                            </p>
+
+                            <p>
+                                Cette rentrée judiciaire marque une étape clé dans le renforcement du système judiciaire
+                                communautaire
+                                et dans la protection des droits fondamentaux au sein de l’Union.
                             </p>
 
                             <link rel="stylesheet"
@@ -115,6 +121,7 @@
                 </div>
             </div>
         </section>
+
 
         <br>
 

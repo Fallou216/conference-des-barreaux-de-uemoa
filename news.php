@@ -117,7 +117,7 @@
                                 <a href="news-details-1.php">20 SEP 2024</a>
                             </div>
                             <div class="blog-card-content">
-                                <h4><a href="news.php">3e Congrès des Avocats de l’UEMOA : Bilan de dix
+                                <h4><a href="news-details-1.php">3e Congrès des Avocats de l’UEMOA : Bilan de dix
                                         ans
                                         d'application du Règlement n°05</a></h4>
                                 <p>Le 3e Congrès des Avocats de l'UEMOA s'est tenu à Abidjan, réunissant des avocats des
@@ -132,13 +132,13 @@
                             <div class="blog-card-image">
                                 <img src="assets/image/CDBU1.png" class="img-fluid"
                                     alt="Recommandations du Congrès 2024">
-                                <a href="news.php"></a>
+                                <a href="news-details-2.php"></a>
                             </div>
                             <div class="blog-card-date">
-                                <a href="news.php">21 SEP 2024</a>
+                                <a href="news-details-2.php">21 SEP 2024</a>
                             </div>
                             <div class="blog-card-content">
-                                <h4><a href="news.php">Cinq recommandations pour l'avenir de la profession
+                                <h4><a href="news-details-2.php">Cinq recommandations pour l'avenir de la profession
                                         d'avocat dans l'UEMOA</a></h4>
                                 <p>À l'issue du congrès, cinq recommandations clés ont été formulées pour améliorer
                                     l’exercice de la profession dans l’espace communautaire.</p>
@@ -151,35 +151,13 @@
                             <div class="blog-card-image">
                                 <img src="assets/image/CDBU1.png" class="img-fluid"
                                     alt="Rentrée judiciaire de la Cour de Justice de l’UEMOA">
-                                <a href="news.php"></a>
+                                <a href="news-details-3.php"></a>
                             </div>
                             <div class="blog-card-date">
-                                <a href="actualite-details.html">20 DÉC 2023</a>
+                                <a href="news-details-3.php">20 DÉC 2023</a>
                             </div>
                             <div class="blog-card-content">
-                                <h4><a href="news.php">Rentrée judiciaire de la Cour de Justice de
-                                        l’UEMOA</a>
-                                </h4>
-                                <p>L'audience solennelle de la rentrée judiciaire s'est déroulée à Ouagadougou, abordant
-                                    les
-                                    activités non judiciaires de la Cour.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Article 4-->
-                    <div class="col-lg-4">
-                        <div class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/image/CDBU1.png" class="img-fluid"
-                                    alt="Rentrée judiciaire de la Cour de Justice de l’UEMOA">
-                                <a href="news.php"></a>
-                            </div>
-                            <div class="blog-card-date">
-                                <a href="actualite-details.html">20 DÉC 2023</a>
-                            </div>
-                            <div class="blog-card-content">
-                                <h4><a href="news.php">Rentrée judiciaire de la Cour de Justice de
+                                <h4><a href="news-details-3.php">Rentrée judiciaire de la Cour de Justice de
                                         l’UEMOA</a>
                                 </h4>
                                 <p>L'audience solennelle de la rentrée judiciaire s'est déroulée à Ouagadougou, abordant

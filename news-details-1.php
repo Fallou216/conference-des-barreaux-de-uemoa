@@ -54,51 +54,68 @@
         <!--page-banner-->
         <section class="details-section">
             <div class="container">
-                <!-- Activités récentes de la Conférence des Barreaux de l'UEMOA -->
+                <!-- Détails du 3e Congrès des Avocats de l’UEMOA -->
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="details-image">
-                            <img src="assets/image/CDBU1.png" class="img-fluid"
-                                alt="3ème Congrès des Avocats de l'UEMOA">
+                            <img src="assets/image/CDBU1.png" class="img-fluid" alt="3e Congrès des Avocats de l’UEMOA">
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="details-content">
+                            <h2>⚖️ 3e Congrès des Avocats de l’UEMOA</h2>
                             <p>
-                                En septembre 2024, la Conférence des Barreaux de l'UEMOA a organisé le <strong>3ème
-                                    Congrès des
-                                    Avocats</strong> à Abidjan, Côte d'Ivoire. Cet événement a rassemblé <strong>361
-                                    participants</strong>,
-                                y compris des représentants de pays observateurs tels que la Guinée et le Cameroun.
+                                <strong>Le 20 septembre 2024</strong>, le <strong>3e Congrès des Avocats de
+                                    l’UEMOA</strong> s’est tenu à <strong>Abidjan</strong>,
+                                réunissant <strong>361 participants</strong>, dont des avocats, magistrats et
+                                représentants des institutions judiciaires
+                                des huit pays membres. Des délégations de la Guinée et du Cameroun étaient également
+                                présentes en tant qu'observateurs.
                             </p>
+
+                            <h3>📌 Thème central :</h3>
                             <p>
-                                Le congrès, placé sous le thème <strong>« Dix ans d’application du Règlement n°05 :
-                                    retour vers
-                                    le futur de l’avocature de l’espace UEMOA »</strong>, a permis d'évaluer l'impact du
-                                Règlement
-                                n°05 sur la profession d'avocat et de formuler cinq recommandations majeures pour
-                                relever les défis
-                                actuels de la profession dans l'espace communautaire.
+                                « <strong>Dix ans d’application du Règlement n°05 : retour vers le futur de l’avocature
+                                    de l’espace UEMOA</strong> »
+                                – Une rétrospective sur l’impact de ce règlement sur la profession d’avocat et les défis
+                                à relever pour l’avenir.
                             </p>
-                            <h3>📌 Points clés du Congrès :</h3>
+
+                            <h3>📌 Débats et Recommandations :</h3>
                             <ul>
-                                <li>Évaluation de l'application du <strong>Règlement n°05</strong> après dix ans.</li>
-                                <li>Discussions sur l'<strong>harmonisation des pratiques juridiques</strong> dans
-                                    l'UEMOA.</li>
-                                <li>Renforcement de la <strong>formation continue des avocats</strong>.</li>
-                                <li>Amélioration de la coordination entre les barreaux des États membres.</li>
-                                <li>Propositions pour moderniser la profession d’avocat.</li>
+                                <li><i class="fas fa-gavel"></i> <strong>Évaluation du Règlement n°05 :</strong> Analyse
+                                    des avancées et des difficultés rencontrées depuis sa mise en œuvre.</li>
+                                <li><i class="fas fa-balance-scale"></i> <strong>Harmonisation des pratiques juridiques
+                                        :</strong> Proposition de normes communes pour uniformiser les règles
+                                    professionnelles.</li>
+                                <li><i class="fas fa-graduation-cap"></i> <strong>Formation continue :</strong>
+                                    Développement de programmes pour renforcer les compétences des avocats.</li>
+                                <li><i class="fas fa-users"></i> <strong>Coopération inter-barreaux :</strong>
+                                    Renforcement des échanges et du partage d’expériences entre les barreaux de la
+                                    région.</li>
+                                <li><i class="fas fa-lightbulb"></i> <strong>Modernisation de la profession :</strong>
+                                    Introduction des nouvelles technologies pour améliorer les services juridiques.</li>
                             </ul>
+
                             <p>
-                                Ce congrès a permis de consolider les efforts pour une justice plus harmonisée et
-                                accessible dans
-                                toute la région.
+                                Cet événement a marqué une étape clé dans la consolidation des efforts visant à rendre
+                                la justice
+                                plus efficace et accessible dans l’ensemble de l’UEMOA.
                             </p>
+
+                            <link rel="stylesheet"
+                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                            <a href="news.php" class="btn btn-primary">
+                                <i class="fas fa-arrow-left"></i> Retour aux actualités
+                            </a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <br>
 
 
         <!-- Fin de la section des Partenaires -->

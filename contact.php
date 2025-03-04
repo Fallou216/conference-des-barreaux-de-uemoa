@@ -1,3 +1,43 @@
+<?php
+
+// Connexion à la base de données avec PDO
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "conference-des-barreaux-de-uemoa"; // Nom correct de la base de données
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    if (isset($_POST['soumettre'])) {
+
+        // Sécurisation des entrées utilisateur
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $phone = htmlspecialchars($_POST['phone']);
+        $subject = htmlspecialchars($_POST['subject']);
+        $message = htmlspecialchars($_POST['message']);
+
+        // Vérification de l'email
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "<div class='error'>L'email n'est pas valide.</div>";
+        } else {
+            // Préparer et exécuter l'insertion dans la base de données
+            $stmt = $conn->prepare("INSERT INTO contacts (name, email, phone, subject, message) VALUES (?, ?, ?, ?, ?)");
+            $stmt->execute([$name, $email, $phone, $subject, $message]);
+
+            // Appel du script pour envoyer l'email
+            require 'vendor/contact.php';
+
+            echo "<div class='success'>Formulaire soumis avec succès et message envoyé.</div>";
+        }
+    }
+} catch (PDOException $e) {
+    echo "<div class='error'>Erreur de connexion : " . $e->getMessage() . "</div>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,8 +102,7 @@
                         </div><!-- contact-box -->
                     </div><!-- col-lg-4 -->
                     <div class="col-lg-8">
-                        <form action="assets/inc/sendemail.php" class="contact-form contact-form-validated"
-                            method="post">
+                        <form action="vendor/contact.php" class="contact-form contact-form-validated" method="post">
                             <div class="row row-gutter-10">
                                 <div class="col-12 col-lg-6">
                                     <input type="text" id="name" class="input-text" placeholder="Votre nom" name="name"
