@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require 'autoload.php';
 
 // Connexion à la base de données (à modifier selon tes paramètres)
 $servername = "localhost";
@@ -48,13 +48,59 @@ try {
         $mail->addAddress('falloudioum216@gmail.com', 'Mamadou Fallou Dioum');
 
         $mail->isHTML(true);
-        $mail->Subject = "Nouveau message de contact: $subject";
-        $mail->Body = "
-            <strong>Nom:</strong> $name <br>
-            <strong>Email:</strong> $email <br>
-            <strong>Téléphone:</strong> $phone <br>
-            <strong>Message:</strong><br> $message
-        ";
+$mail->Subject = "Nouveau message de contact: $subject"; // Sujet de l'e-mail
+$mail->Body = "
+    <html>
+    <head>
+        <style>
+            .email-container {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333333;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #dddddd;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            .email-container h2 {
+                color: #444444;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .email-container p {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+            .email-container strong {
+                color: #555555;
+                font-weight: bold;
+            }
+            .email-container .message {
+                background-color: #ffffff;
+                padding: 15px;
+                border: 1px solid #dddddd;
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='email-container'>
+            <h2>Nouveau message de contact</h2>
+            <p><strong>Sujet:</strong> $subject</p>
+            <p><strong>Nom:</strong> $name</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Téléphone:</strong> $phone</p>
+            <div class='message'>
+                <p><strong>Message:</strong></p>
+                <p>$message</p>
+            </div>
+        </div>
+    </body>
+    </html>
+";
 
         $mail->send();
         echo "<div class='success'><p>Votre message a été envoyé avec succès !</p></div>";

@@ -35,3 +35,28 @@
     color: #666;
     margin-bottom: 20px;
 }
+
+#message-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message.success {
+    background-color: #4CAF50; /* Vert */
+}
+
+.message.error {
+    background-color: #f44336; /* Rouge */
+}

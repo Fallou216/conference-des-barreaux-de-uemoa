@@ -42,6 +42,24 @@ try {
 <html lang="en">
 
 <head>
+    <style>
+    /* Styles pour les messages de succès et d'erreur */
+    .alert-success {
+
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .alert-error {
+
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
@@ -70,6 +88,25 @@ try {
         line-height: 32px;
         font-weight: 600;
         color: var(--thm-white);
+    }
+    </style>
+
+    <style>
+    /* Styles pour les messages de succès et d'erreur */
+    .alert-success {
+
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .alert-error {
+
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
     }
     </style>
 </head>
@@ -102,7 +139,12 @@ try {
                         </div><!-- contact-box -->
                     </div><!-- col-lg-4 -->
                     <div class="col-lg-8">
-                        <form action="vendor/contact.php" class="contact-form contact-form-validated" method="post">
+                        <!-- Conteneur pour les messages -->
+                        <div id="message-container" style="display: none;">
+                            <div id="message" class="message"></div>
+                        </div>
+
+                        <form action="vendor/sendmail.php" class="contact-form contact-form-validated" method="post">
                             <div class="row row-gutter-10">
                                 <div class="col-12 col-lg-6">
                                     <input type="text" id="name" class="input-text" placeholder="Votre nom" name="name"
@@ -129,7 +171,99 @@ try {
                                 </div><!-- col-12 col-lg-12 -->
                             </div><!-- row -->
                         </form><!-- contact-form -->
-                    </div><!-- col-lg-8 -->
+                    </div>
+
+                    <style>
+                    /* Styles pour les messages */
+                    #message-container {
+                        margin-bottom: 20px;
+                        /* Espace entre les messages et le formulaire */
+                    }
+
+                    .message {
+                        padding: 15px;
+                        border-radius: 5px;
+                        color: white;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                        opacity: 1;
+                        transition: opacity 0.5s ease-in-out;
+                    }
+
+                    .message.success {
+                        background-color: #4CAF50;
+                        /* Vert */
+                    }
+
+                    .message.error {
+                        background-color: #f44336;
+                        /* Rouge */
+                    }
+
+                    /* Styles pour le formulaire (couleurs d'origine) */
+                    .btn-primary {
+                        background-color: var(--thm-primary);
+                        /* Couleur bleue d'origine */
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .btn-primary:hover {
+                        background-color: #0056b3;
+                        /* Couleur bleue plus foncée au survol */
+                    }
+                    </style>
+
+                    <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const form = document.querySelector('.contact-form');
+                        const messageContainer = document.getElementById('message-container');
+                        const message = document.getElementById('message');
+
+                        form.addEventListener('submit', function(event) {
+                            event.preventDefault();
+
+                            // Simuler une soumission de formulaire réussie ou une erreur
+                            const formData = new FormData(form);
+                            fetch(form.action, {
+                                    method: form.method,
+                                    body: formData,
+                                })
+                                .then(response => {
+                                    if (response.ok) {
+                                        showMessage('Votre message a été envoyé avec succès!',
+                                            'success');
+                                    } else {
+                                        showMessage(
+                                            'Une erreur s\'est produite lors de l\'envoi du message.',
+                                            'error');
+                                    }
+                                })
+                                .catch(() => {
+                                    showMessage(
+                                        'Une erreur s\'est produite lors de l\'envoi du message.',
+                                        'error');
+                                });
+
+                            // Réinitialiser le formulaire après la soumission
+                            form.reset();
+                        });
+
+                        function showMessage(text, type) {
+                            message.textContent = text;
+                            message.className = 'message ' + type;
+                            messageContainer.style.display = 'block';
+
+                            // Faire disparaître le message après 10 secondes
+                            setTimeout(function() {
+                                messageContainer.style.display = 'none';
+                            }, 10000);
+                        }
+                    });
+                    </script>
                 </div><!-- row -->
             </div><!-- container -->
         </section><!-- contact-section -->
