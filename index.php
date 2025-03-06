@@ -46,10 +46,10 @@
                         <div class="col-xl-2 col-lg-4 col-md-6">
                             <div class="department-card">
                                 <div class="department-card-icon">
-                                    <a href="news.php"><i class="fas fa-chalkboard-teacher"></i></a>
+                                    <a href="missions.php"><i class="fas fa-chalkboard-teacher"></i></a>
                                 </div>
                                 <div class="department-card-content">
-                                    <h5><a href="actions.php">Formations et Capacités</a></h5>
+                                    <h5><a href="missions.php">Formations et Capacités</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                         <div class="col-xl-2 col-lg-4 col-md-6">
                             <div class="department-card">
                                 <div class="department-card-icon">
-                                    <a href="news.php"><i class="fas fa-handshake"></i></a>
+                                    <a href="missions.php"><i class="fas fa-handshake"></i></a>
                                 </div>
                                 <div class="department-card-content">
                                     <h5><a href="missions.php">Médiation et Arbitrage</a></h5>
@@ -97,7 +97,7 @@
                                     <a href="missions.php"><i class="fas fa-shield-alt"></i></a>
                                 </div>
                                 <div class="department-card-content">
-                                    <h5><a href="actions.php">Lutte contre la Corruption</a></h5>
+                                    <h5><a href="missions.php">Lutte contre la Corruption</a></h5>
                                 </div>
                             </div>
                         </div>

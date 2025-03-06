@@ -6668,6 +6668,9 @@ label {
 }
 .sidebar-recent-post-img{
 	display: inline-block;
+	width: 100px; /* Définissez la largeur souhaitée */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver le ratio */
+    object-fit: cover; /* Ajuste l'image pour couvrir entièrement le conteneur */
 }
 .sidebar-recent-post-content{
 	margin-left: 20px;

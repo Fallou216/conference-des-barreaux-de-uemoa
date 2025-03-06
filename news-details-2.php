@@ -50,77 +50,161 @@
     <!-- end header-->
 
     <div class="page-wrapper">
-
         <!--page-banner-->
-        <section class="details-section">
+        <section class="news-details-section">
             <div class="container">
-                <!-- Détails des recommandations du Congrès 2024 -->
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="details-image">
-                            <img src="assets/image/CDBU1.png" class="img-fluid" alt="Recommandations du Congrès 2024">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="details-content">
-                            <h2>📜 Cinq recommandations pour l’avenir de la profession d’avocat dans l’UEMOA</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="news-details-box-image">
+                            <div class="news-details-box-image-inner">
+                                <img src="assets/image/CDBU1.png" class="img-fluid"
+                                    alt="Recommandations du Congrès 2024">
+                                <a href="news.php" class="news-details-box-date">21 SEP</a>
+                            </div><!-- news-details-box-image-inner -->
+                        </div><!-- news-details-box-image -->
+                        <div class="news-details-meta-box">
+                            <!-- news-details-meta-box-inner -->
+                        </div><!-- news-details-meta-box -->
+                        <div class="news-details-content-box">
+                            <h4><i class="fas fa-balance-scale"></i> Cinq recommandations pour l’avenir de la profession
+                                d’avocat dans l’UEMOA</h4>
                             <p>
                                 Le <strong>21 septembre 2024</strong>, à l’issue du <strong>3ème Congrès des Avocats de
-                                    l’UEMOA</strong>
-                                tenu à <strong>Abidjan</strong>, les participants ont mis en lumière les défis
-                                rencontrés par la profession
-                                d’avocat au sein de l’espace communautaire.
+                                    l’UEMOA</strong> tenu à <strong>Abidjan</strong>, les participants ont mis en
+                                lumière les défis
+                                rencontrés par la profession d’avocat au sein de l’espace communautaire.
                             </p>
                             <p>
                                 Pour garantir une justice plus harmonisée et accessible, cinq recommandations majeures
-                                ont été
-                                adoptées afin d’améliorer l’exercice du métier d’avocat.
+                                ont été adoptées afin d’améliorer l’exercice du métier d’avocat.
                             </p>
 
-                            <h3>📌 Recommandations clés :</h3>
+                            <h5><i class="fas fa-lightbulb"></i> Recommandations clés :</h5>
                             <ul>
-                                <li><i class="fas fa-balance-scale"></i> <strong>Harmonisation des pratiques juridiques
-                                        :</strong>
-                                    Adoption de normes communes pour unifier les règles professionnelles dans tous les
-                                    pays membres.</li>
-                                <li><i class="fas fa-user-graduate"></i> <strong>Formation continue :</strong>
-                                    Développement de programmes de formation adaptés aux nouvelles exigences du droit.
-                                </li>
-                                <li><i class="fas fa-laptop-code"></i> <strong>Modernisation des outils juridiques
-                                        :</strong>
-                                    Digitalisation des procédures judiciaires et amélioration de l’accès aux bases de
-                                    données juridiques.</li>
-                                <li><i class="fas fa-shield-alt"></i> <strong>Indépendance et protection des avocats
-                                        :</strong>
-                                    Mise en place de garanties pour assurer la sécurité et l’indépendance des avocats.
-                                </li>
-                                <li><i class="fas fa-handshake"></i> <strong>Renforcement de la coopération :</strong>
-                                    Instauration d’un cadre de collaboration structuré entre les barreaux des États
-                                    membres.</li>
+                                <i class="fas fa-balance-scale"></i> <strong>Harmonisation des pratiques juridiques
+                                    :</strong>
+                                Adoption de normes communes pour unifier les règles professionnelles dans tous les pays
+                                membres.
+                                <br>
+                                <br>
+                                <i class="fas fa-user-graduate"></i> <strong>Formation continue :</strong>
+                                Développement de programmes de formation adaptés aux nouvelles exigences du droit.
+                                <br>
+                                <br>
+                                <i class="fas fa-laptop-code"></i> <strong>Modernisation des outils juridiques
+                                    :</strong>
+                                Digitalisation des procédures judiciaires et amélioration de l’accès aux bases de
+                                données juridiques.
+                                <br>
+                                <br>
+                                <i class="fas fa-shield-alt"></i> <strong>Indépendance et protection des avocats
+                                    :</strong>
+                                Mise en place de garanties pour assurer la sécurité et l’indépendance des avocats.
+                                <br>
+                                <br>
+                                <i class="fas fa-handshake"></i> <strong>Renforcement de la coopération :</strong>
+                                Instauration d’un cadre de collaboration structuré entre les barreaux des États membres.
                             </ul>
 
                             <p>
                                 Ces recommandations constituent une avancée majeure vers une profession plus forte et
-                                mieux adaptée
-                                aux défis contemporains du droit dans l’espace UEMOA.
+                                mieux adaptée aux défis contemporains du droit dans l’espace UEMOA.
                             </p>
 
-                            <link rel="stylesheet"
-                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
                             <a href="news.php" class="btn btn-primary">
                                 <i class="fas fa-arrow-left"></i> Retour aux actualités
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div><!-- /.news-details-content-box -->
+                    </div><!-- col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar-form-content">
+                            </div><!-- sidebar-form-content -->
+                            <div class="sidebar-widget sidebar-widget-recent-post">
+                                <h4>Actualités Récentes</h4>
+                                <div class="sidebar-recent-post">
+                                    <div class="sidebar-recent-post-img">
+                                    </div><!-- sidebar-recent-post-img -->
+                                    <div class="sidebar-recent-post-content">
+                                        <div class="sidebar-meta">
+                                            <div class="sidebar-meta-item">
+                                                <div class="sidebar-meta-icon">
+                                                    <span class="author">
+                                                        by<a>Admin</a>
+                                                    </span><!-- author -->
+                                                </div><!-- sidebar-meta-icon -->
+                                            </div><!-- sidebar-meta-item -->
+                                            <div class="sidebar-post-title">
+                                                <h5><a href="news-details-1.php">3e Congrès des Avocats de l’UEMOA</a>
+                                                </h5>
+                                            </div><!-- sidebar-post-title -->
+                                        </div><!-- sidebar-meta -->
+                                    </div><!-- sidebar-recent-post-content -->
+                                </div><!-- sidebar-recent-post -->
+                                <div class="sidebar-recent-post">
+                                    <div class="sidebar-recent-post-img">
+                                    </div><!-- sidebar-recent-post-img -->
+                                    <div class="sidebar-recent-post-content">
+                                        <div class="sidebar-meta">
+                                            <div class="sidebar-meta-item">
+                                                <div class="sidebar-meta-icon">
+                                                    <span class="author">
+                                                        by<a>Admin</a>
+                                                    </span><!-- author -->
+                                                </div><!-- sidebar-meta-icon -->
+                                            </div><!-- sidebar-meta-item -->
+                                            <div class="sidebar-post-title">
+                                                <h5><a href="news-details-2.php">Recommandations du Congrès 2024</a>
+                                                </h5>
+                                            </div><!-- sidebar-post-title -->
+                                        </div><!-- sidebar-meta -->
+                                    </div><!-- sidebar-recent-post-content -->
+                                </div><!-- sidebar-recent-post -->
+                                <div class="sidebar-recent-post">
+                                    <div class="sidebar-recent-post-img">
+                                    </div><!-- sidebar-recent-post-img -->
+                                    <div class="sidebar-recent-post-content">
+                                        <div class="sidebar-meta">
+                                            <div class="sidebar-meta-item">
+                                                <div class="sidebar-meta-icon">
+                                                    <span class="author">
+                                                        by<a>Admin</a>
+                                                    </span><!-- author -->
+                                                </div><!-- sidebar-meta-icon -->
+                                            </div><!-- sidebar-meta-item -->
+                                            <div class="sidebar-post-title">
+                                                <h5><a href="news-details-3.php">Rentrée judiciaire de la Cour de
+                                                        Justice de l’UEMOA</a></h5>
+                                            </div><!-- sidebar-post-title -->
+                                        </div><!-- sidebar-meta -->
+                                    </div><!-- sidebar-recent-post-content -->
+                                </div><!-- sidebar-recent-post -->
+                            </div><!-- sidebar-widget sidebar-widget-recent-post -->
+                            <div class="sidebar-widget sidebar-widget-recent-category">
+                                <style>
+                                .sidebar-widget-recent-category-box {
+                                    height: 420px;
+                                    overflow-y: auto;
+                                }
+                                </style>
+                                <div class="sidebar-widget-recent-category-box">
+                                    <h4 class="section-title text-left">Nos Actualités</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="news-details-1.php">3e Congrès des Avocats de l’UEMOA<i
+                                                    class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="news-details-2.php">Recommandations du Congrès 2024<i
+                                                    class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="news-details-3.php">Rentrée judiciaire de la Cour de Justice de
+                                                l’UEMOA<i class="fa-solid fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- sidebar-widget-recent-category -->
+                        </div><!-- sidebar -->
+                    </div><!-- col-lg-4 -->
+                </div><!-- row -->
+            </div><!-- container -->
         </section>
-
-        <br>
-
-        <!-- Fin de la section des Partenaires -->
-        <!--client-section-->
-    </div>
+    </div><!-- page-wrapper -->
     <!--page-wrapper-->
 
     <!--bottom-footer-->

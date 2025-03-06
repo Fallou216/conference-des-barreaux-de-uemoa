@@ -33,7 +33,7 @@
             </div><!-- topbar-left -->
             <div class="topbar-right">
                 <ul>
-                    <li><a href="#">Nos Partenaires</a></li>
+                    <li><a href="Partenaires.php">Nos Partenaires</a></li>
                     <li><a href="contact.php">Nous Contacter</a></li>
                 </ul><!-- ul -->
             </div>
