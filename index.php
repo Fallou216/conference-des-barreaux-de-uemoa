@@ -201,10 +201,11 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Bénin</h3>
-                            <p>Le <strong>Bénin</strong> est un pays d'Afrique de l'Ouest, bordé par le Togo à
-                                l'ouest, le Nigeria à
-                                l'est et le Niger au nord. Sa capitale est Porto-Novo, et la ville la plus grande
-                                est Cotonou.</p>
+                            <p>Le <strong>Bénin</strong> pays d'Afrique de l'Ouest au riche patrimoine culturel, le
+                                Bénin
+                                possède un système judiciaire basé sur le droit civil, hérité du système français, avec
+                                une Cour suprême, des cours d'appel et des tribunaux de première instance, et compte
+                                environ 165 avocats.</p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
                 </div><!-- col-xxl-4 col-xl-6 -->
@@ -218,9 +219,10 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Burkina Faso</h3>
-                            <p>Le <strong>Burkina Faso</strong> est un pays de l'Afrique de l'Ouest entouré
-                                par le Mali, le
-                                Niger, le Bénin, le Togo, le Ghana et la Côte d'Ivoire. Sa capitale est Ouagadougou.
+                            <p>Le <strong>Burkina Faso</strong> pays d'Afrique de l'Ouest est reconnu pour son artisanat
+                                et sa musique, son système judiciaire, également de droit civil, comprend une Cour de
+                                cassation, des cours d'appel et des tribunaux de grande instance, et le pays compte
+                                environ 204 avocats.
                             </p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
@@ -235,10 +237,10 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Côte d'Ivoire</h3>
-                            <p>La <strong>Côte d'Ivoire</strong> est un pays côtier de l'Afrique de l'Ouest, bordé
-                                par le Liberia, la
-                                Guinée, le Mali, le Burkina Faso et le Ghana. Sa capitale politique est
-                                Yamoussoukro, et la capitale économique est Abidjan.</p>
+                            <p>La <strong>Côte d'Ivoire</strong> pays enclavé d'Afrique de l'Ouest, le Burkina Faso est
+                                reconnu pour son artisanat et sa musique, son système judiciaire, également de droit
+                                civil, comprend une Cour de cassation, des cours d'appel et des tribunaux de grande
+                                instance, et le pays compte environ 559 avocats.</p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
                 </div><!-- col-xxl-4 col-xl-6 -->
@@ -252,9 +254,10 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Guinée-Bissau</h3>
-                            <p>La <strong>Guinée-Bissau</strong> est un pays d'Afrique de l'Ouest, bordé par le
-                                Sénégal au nord et la
-                                Guinée au sud et à l'est. Sa capitale est Bissau.</p>
+                            <p>La <strong>Guinée-Bissau</strong> pays d'Afrique de l'Ouest, la Guinée-Bissau est connue
+                                pour ses îles Bijagos et sa biodiversité, son système judiciaire, en développement,
+                                comprend une Cour suprême, des tribunaux régionaux et des tribunaux de première
+                                instance, et le pays compte environ 50 avocats.</p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
                 </div><!-- col-xxl-4 col-xl-6 -->
@@ -268,10 +271,11 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Mali</h3>
-                            <p>Le <strong>Mali</strong> est un vaste pays de l'Afrique de l'Ouest bordé par
-                                l'Algérie, le
-                                Niger, le Burkina Faso, la Côte d'Ivoire, la Guinée, le Sénégal et la Mauritanie. Sa
-                                capitale est Bamako.</p>
+                            <p>Le <strong>Mali</strong> vaste pays d'Afrique de l'Ouest, le Mali est riche en histoire
+                                et
+                                en culture, avec des sites emblématiques comme Tombouctou, son système judiciaire
+                                combine le droit civil et le droit coutumier, avec une Cour suprême, des cours d'appel
+                                et des tribunaux de première instance, et compte environ 360 avocats.</p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
                 </div><!-- col-xxl-4 col-xl-6 -->
@@ -285,9 +289,10 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Niger</h3>
-                            <p>Le <strong>Niger</strong> est un pays de l'Afrique de l'Ouest entouré par
-                                l'Algérie, la Libye,
-                                le Tchad, le Nigeria, le Bénin, le Burkina Faso et le Mali. Sa capitale est Niamey.
+                            <p>Le <strong>Niger</strong> pays sahélien d'Afrique de l'Ouest, le Niger est caractérisé
+                                par ses paysages désertiques et sa culture touarègue, son système judiciaire, mêlant
+                                droit civil et droit coutumier, comprend une Cour de cassation, des cours d'appel et des
+                                tribunaux de grande instance, et le pays compte environ 130 avocats.
                             </p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
@@ -301,10 +306,10 @@
                                 style="width: 50px; height: auto;">
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
-                            <h3>Sénégal</h3>
-                            <p>Le <strong>Sénégal</strong> est un pays côtier de l'Afrique de l'Ouest, bordé par la
-                                Mauritanie, le
-                                Mali, la Guinée et la Guinée-Bissau. Sa capitale est Dakar.</p>
+                            <h3>Sénégal</h3> pays d'Afrique de l'Ouest réputé pour sa musique, sa danse et son
+                            hospitalité, le Sénégal a un système judiciaire basé sur le droit civil, avec une Cour
+                            suprême, des cours d'appel et des tribunaux de première instance, et compte environ 400
+                            avocats.</p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
                 </div><!-- col-xxl-4 col-xl-6 -->
@@ -318,9 +323,10 @@
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
                             <h3>Togo</h3>
-                            <p>Le <strong>Togo</strong> est un pays étroit de l'Afrique de l'Ouest, bordé par le
-                                Ghana à l'ouest, le
-                                Bénin à l'est et le Burkina Faso au nord. Sa capitale est Lomé.</p>
+                            <p>Le <strong>Togo</strong> petit pays d'Afrique de l'Ouest, le Togo est connu pour ses
+                                plages, ses cascades et sa culture vaudou, son système judiciaire, de droit civil,
+                                comprend une Cour suprême, des cours d'appel et des tribunaux de première instance, et
+                                le pays compte environ 154 avocats.</p>
                         </div><!-- service-one-card-content -->
                     </div><!-- service-one-card -->
                 </div><!-- col-xxl-4 col-xl-6 -->

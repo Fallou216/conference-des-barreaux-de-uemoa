@@ -14,9 +14,11 @@
                 </div><!-- footer-widget-text -->
 
                 <div class="footer-widget-socials">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/UEMOA_Officiel"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/UEMOAOfficielle/?locale=fr_FR"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/uemoaofficiel/?originalSubdomain=bf"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div><!-- footer-widget-socials -->
             </div>
             <!--col-lg-4-->

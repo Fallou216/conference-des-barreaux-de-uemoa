@@ -130,7 +130,7 @@
                                             <div class="sidebar-meta-item">
                                                 <div class="sidebar-meta-icon">
                                                     <span class="author">
-                                                        by<a>Admin</a>
+                                                        by<a>UEMOA</a>
                                                     </span><!-- author -->
                                                 </div><!-- sidebar-meta-icon -->
                                             </div><!-- sidebar-meta-item -->
@@ -150,7 +150,7 @@
                                             <div class="sidebar-meta-item">
                                                 <div class="sidebar-meta-icon">
                                                     <span class="author">
-                                                        by<a>Admin</a>
+                                                        by<a>UEMOA</a>
                                                     </span><!-- author -->
                                                 </div><!-- sidebar-meta-icon -->
                                             </div><!-- sidebar-meta-item -->
@@ -170,7 +170,7 @@
                                             <div class="sidebar-meta-item">
                                                 <div class="sidebar-meta-icon">
                                                     <span class="author">
-                                                        by<a>Admin</a>
+                                                        by<a>UEMOA</a>
                                                     </span><!-- author -->
                                                 </div><!-- sidebar-meta-icon -->
                                             </div><!-- sidebar-meta-item -->
