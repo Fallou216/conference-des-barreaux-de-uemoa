@@ -127,8 +127,6 @@
                             <div class="sidebar-widget sidebar-widget-recent-post">
                                 <h4>Actualités Récentes</h4>
                                 <div class="sidebar-recent-post">
-                                    <div class="sidebar-recent-post-img">
-                                    </div><!-- sidebar-recent-post-img -->
                                     <div class="sidebar-recent-post-content">
                                         <div class="sidebar-meta">
                                             <div class="sidebar-meta-item">
@@ -146,8 +144,6 @@
                                     </div><!-- sidebar-recent-post-content -->
                                 </div><!-- sidebar-recent-post -->
                                 <div class="sidebar-recent-post">
-                                    <div class="sidebar-recent-post-img">
-                                    </div><!-- sidebar-recent-post-img -->
                                     <div class="sidebar-recent-post-content">
                                         <div class="sidebar-meta">
                                             <div class="sidebar-meta-item">
@@ -165,8 +161,6 @@
                                     </div><!-- sidebar-recent-post-content -->
                                 </div><!-- sidebar-recent-post -->
                                 <div class="sidebar-recent-post">
-                                    <div class="sidebar-recent-post-img">
-                                    </div><!-- sidebar-recent-post-img -->
                                     <div class="sidebar-recent-post-content">
                                         <div class="sidebar-meta">
                                             <div class="sidebar-meta-item">

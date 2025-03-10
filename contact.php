@@ -167,7 +167,10 @@ try {
                                         aria-required="true"></textarea>
                                 </div><!-- col-12 col-lg-12 -->
                                 <div class="col-12 col-lg-12">
-                                    <button class="btn btn-primary">Envoyer le message</button>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                                    </button>
+
                                 </div><!-- col-12 col-lg-12 -->
                             </div><!-- row -->
                         </form><!-- contact-form -->
@@ -271,9 +274,10 @@ try {
             <div class="container">
                 <div class="responsive-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.940123456789!2d-17.445123456789!3d14.692123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe123456789abcdef%3A0x123456789abcdef!2sCentre%20International%20de%20Conf%C3%A9rences%20Abdou%20Diouf!5e0!3m2!1sfr!2ssn!4v1234567890123"
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15904852.990911573!2d-20.19317955213576!3d13.286643900147148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d14.6931712!2d-17.4718976!4m5!1s0xe2ebe2112555555%3A0x8e98823fea1d476c!2s9F9M%2BG2X%20Si%C3%A8ge%20de%20L%C2%B4UEMOA%2C%20Avenue%20Maurice%20Yameogo%2C%20Ouagadougou%2C%20Burkina%20Faso!3m2!1d12.3684054!2d-1.5172607999999999!5e0!3m2!1sfr!2ssn!4v1741599044356!5m2!1sfr!2ssn"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div><!-- responsive-map -->
             </div><!-- container -->
         </div><!-- contact-gmap-section -->
@@ -311,10 +315,14 @@ try {
                         <div class="col-12 col-lg-6 col-xl-2">
                             <div class="cta-four-content">
                                 <div class="cta-four-widget-socials">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://x.com/UEMOA_Officiel"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/UEMOAOfficielle/?locale=fr_FR"><i
+                                            class="fa-brands fa-facebook"></i></a>
+                                    <a
+                                        href="https://www.google.com/search?q=page+pinterest+de+uemoa&oq=page+pinterest+de+uemoa&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDYzMzlqMGo0qAIGsAIB8QV5NmMvHBxBiQ&sourceid=chrome&ie=UTF-8"><i
+                                            class="fa-brands fa-pinterest-p"></i></a>
+                                    <a href="https://www.instagram.com/uemoaofficiel/"><i
+                                            class="fa-brands fa-instagram"></i></a>
                                 </div><!-- cta-four-widget-socials -->
                             </div><!-- cta-four-content -->
                         </div><!-- col-12 col-lg-6 col-xl-2 -->

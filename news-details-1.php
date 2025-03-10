@@ -118,13 +118,11 @@
                     <div class="col-lg-4">
                         <div class="sidebar">
                             <div class="sidebar-form-content">
-
                             </div><!-- sidebar-form-content -->
                             <div class="sidebar-widget sidebar-widget-recent-post">
                                 <h4>Actualités Récentes</h4>
                                 <div class="sidebar-recent-post">
-                                    <div class="sidebar-recent-post-img">
-                                    </div><!-- sidebar-recent-post-img -->
+                                    <!-- sidebar-recent-post-img -->
                                     <div class="sidebar-recent-post-content">
                                         <div class="sidebar-meta">
                                             <div class="sidebar-meta-item">
@@ -142,9 +140,6 @@
                                     </div><!-- sidebar-recent-post-content -->
                                 </div><!-- sidebar-recent-post -->
                                 <div class="sidebar-recent-post">
-                                    <div class="sidebar-recent-post-img">
-
-                                    </div><!-- sidebar-recent-post-img -->
                                     <div class="sidebar-recent-post-content">
                                         <div class="sidebar-meta">
                                             <div class="sidebar-meta-item">
@@ -162,9 +157,6 @@
                                     </div><!-- sidebar-recent-post-content -->
                                 </div><!-- sidebar-recent-post -->
                                 <div class="sidebar-recent-post">
-                                    <div class="sidebar-recent-post-img">
-
-                                    </div><!-- sidebar-recent-post-img -->
                                     <div class="sidebar-recent-post-content">
                                         <div class="sidebar-meta">
                                             <div class="sidebar-meta-item">
@@ -191,7 +183,6 @@
                                     /* Ajoute un défilement vertical si le contenu dépasse */
                                 }
                                 </style>
-
                                 <div class="sidebar-widget-recent-category-box">
                                     <h4 class="section-title text-left">Nos Actualités</h4>
                                     <ul class="list-unstyled">

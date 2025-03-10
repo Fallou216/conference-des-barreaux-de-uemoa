@@ -68,7 +68,10 @@
                     </a><!-- search-toggler -->
                 </div><!-- search-box -->
                 <div class="main-menu-right-button">
-                    <a href="contact.php" class="btn btn-primary">Nous contacter</a>
+                    <a href="contact.php" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Nous contacter
+                    </a>
+
                 </div><!-- main-menu-right-button -->
             </div>
             <!--main-menu-right-->
