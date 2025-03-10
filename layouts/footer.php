@@ -34,6 +34,7 @@
                             <li><a href="etats-membres.php">États Membres</a></li>
                             <li><a href="partenaires.php">Partenaires</a></li>
                             <li><a href="contact.php">Contact</a></li>
+                            <li><a href="news.php">Actualités</a></li>
                         </ul><!-- list-unstyled -->
                     </div><!-- footer-widget-explore -->
                 </div>

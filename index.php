@@ -101,7 +101,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div><!-- row -->
                 </div><!-- department-section-inner -->
             </div><!-- container -->
@@ -846,7 +845,7 @@
                         </div>
                     </div>
                     <div class="col-xl-7">
-                        <form action="assets/inc/sendemail.php" class="cta-two-form" method="post">
+                        <form action="vendor/abonnement.php" class="cta-two-form" method="post">
                             <div class="cta-two-form-group">
                                 <input type="email" id="email" class="input-text" placeholder="Adresse e-mail"
                                     name="email" required>
