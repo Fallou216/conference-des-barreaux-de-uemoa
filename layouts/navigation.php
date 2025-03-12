@@ -24,8 +24,10 @@
         <li class="has-dropdown">
             <a href="#">Documenthèques</a>
             <ul class="list-unstyled">
-                <li><a href="lois.php">Lois</a></li>
-                <li><a href="reglements.php">Règlements</a></li>
+                <li><a href="règlements.php">Règlements</a></li>
+                <li><a href="règlements-d'exécution">Règlements d'exécution</a></li>
+                <li><a href="texte-déontologie.php">Texte de déontologie</a></li>
+                <li><a href="règlement-intérieur-harmonisé.php">Règlement Intérieur harmonisé</a></li>
             </ul>
         </li>
 

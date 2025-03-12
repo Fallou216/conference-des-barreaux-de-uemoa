@@ -188,7 +188,7 @@
     <!--mayor-section-->
     <section class="service-one-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center;">États Membres de l'UEMOA</h2>
+            <h2 class="section-title" style="text-align: center;">Barreaux de la conférence de l'espace uemoa</h2>
 
             <div class="row row-gutter-30">
                 <!-- Bénin -->
@@ -336,8 +336,8 @@
     <section class="batonniers-section">
         <div class="container">
             <div class="section-title-box text-center">
-                <div class="section-tagline">Nos Bâtonniers</div>
-                <h2 class="section-title">Les Bâtonniers des Pays Membres de l'UEMOA</h2>
+                <div class="section-tagline">Les bâtonniers des barreaux membres de l'espace uemoa</div>
+                <h2 class="section-title">Les bâtonniers des barreaux membres de l'espace uemoa</h2>
             </div><!-- section-title-box -->
             <div class="batonniers-grid">
                 <!-- Bâtonnier du Bénin -->
@@ -514,7 +514,7 @@
                             <i class="fa-solid fa-handshake"></i>
                         </div><!-- service-one-icon -->
                         <div class="service-one-card-content">
-                            <h3>Solidarité entre les Barreaux</h3>
+                            <h3>Solidarité et coopération entre les Barreaux</h3>
                             <p>Renforcer la coopération et l'échange d'informations entre les barreaux des
                                 différents pays membres pour une meilleure collaboration régionale.</p>
                         </div><!-- service-one-card-content -->
@@ -748,16 +748,6 @@
         </div><!-- container -->
     </section>
     <!-- Fin de la section des Partenaires -->
-    <!-- Section des Bâtonniers -->
-
-    <!-- Fin de la section des Bâtonniers -->
-
-    <!-- Fin de la section des Bâtonniers -->
-
-    <!-- Fin de la section des Bâtonniers des Pays Membres de l'UEMOA -->
-
-    <!--event-section-->
-    <!--cta-five-section-->
     <!-- Section Actualités -->
     <section class="blog-section">
         <div class="container">
