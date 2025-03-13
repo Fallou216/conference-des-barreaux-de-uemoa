@@ -65,8 +65,7 @@
                         <div class="col-12 col-md-6 col-xl-3">
                             <div class="team-card">
                                 <div class="team-card-img">
-                                    <img src="assets/image/team/abdoulaye_diop.jpg" class="img-fluid"
-                                        alt="Abdoulaye Diop">
+                                    <img src="assets/image/AD.png" class="img-fluid" alt="Abdoulaye Diop">
                                 </div>
                                 <div class="team-card-content">
                                     <h4>Abdoulaye Diop</h4>
