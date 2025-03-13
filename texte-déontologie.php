@@ -63,11 +63,14 @@
                                     <i class="fa-solid fa-book"></i>
                                 </div><!-- service-three-icon -->
                                 <div class="service-three-card-content">
-                                    <h3><a href="assets/ODA-PDF/CODE DE DÉONTOLOGIE DES AVOCATS DE L’ESPACE UEMOA.pdf"
+                                    <h3><a href="assets/ODA-PDF/CODE DE DÉONTOLOGIE DES AVOCATS DE L’ESPACE UEMOA .pdf"
                                             target="_blank">CODE DE DÉONTOLOGIE DES AVOCATS DE L’ESPACE UEMOA</a></h3>
-                                    <p>Vu le Traité modifié de l’UEMOA en date du 10 janvier 1994 ; Vu le Règlement n°10/2006/CM/UEMOA du 25 juillet 2006 relatif à la libre circulation et à l’établissement des Avocats ressortissants de l’Union au sein de l’espace UEMOA notamment en son...</p>
+                                    <p>Vu le Traité modifié de l’UEMOA en date du 10 janvier 1994 ; Vu le Règlement
+                                        n°10/2006/CM/UEMOA du 25 juillet 2006 relatif à la libre circulation et à
+                                        l’établissement des Avocats ressortissants de l’Union au sein de l’espace UEMOA
+                                        notamment en son...</p>
                                     <div class="service-three-detail">
-                                        <a href="assets/ODA-PDF/CODE DE DÉONTOLOGIE DES AVOCATS DE L’ESPACE UEMOA.pdf"
+                                        <a href="assets/ODA-PDF/CODE DE DÉONTOLOGIE DES AVOCATS DE L’ESPACE UEMOA .pdf"
                                             target="_blank">
                                             <span>Télécharger</span>
                                             <i class="fa-solid fa-arrow-right-long"></i>
@@ -77,7 +80,6 @@
                                 </div><!-- service-three-card-content -->
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
-
                     </div><!-- row -->
                 </div><!-- tab-pane -->
             </div><!-- tab-content -->
