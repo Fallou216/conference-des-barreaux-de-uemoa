@@ -41,13 +41,10 @@
         <?php include ('layouts/preloader.php'); ?>
     </div>
     <!-- end pre-loader -->
-
     <!-- Header -->
     <?php include ('layouts/header.php'); ?>
     <!-- end header-->
     <div class="page-wrapper">
-        <!-- Section principale du slider -->
-        <!-- Section principale du slider -->
         <!-- Section principale du slider -->
         <section class="main-slider main-slider-two">
             <div class="main-slider-two-swiper owl-carousel owl-theme">

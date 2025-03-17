@@ -45,21 +45,17 @@
     <?php include ('layouts/header.php'); ?>
     <!-- end header-->
     <div class="page-wrapper">
-
         <!--page-banner-->
-
         <div class="page-wrapper">
-
             <!--page-banner-->
             <!-- nav nav-pills -->
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     <div class="row row-gutter-30">
-                        <!-- Document 2 : Code des Douanes -->
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
-                                    <i class="fa-solid fa-gavel"></i>
+                                    <i class="fa-solid fa-scale-balanced"></i>
                                 </div><!-- service-three-icon -->
                                 <div class="service-three-card-content">
                                     <h3><a href="assets/ODA-PDF/REGLEMENT D’EXECUTION N°0022018COMUEMOA RELATIF A LA CAISSE AUTONOME DE RÉGLEMENTS PECUNIAIRES DES AVOCATS.pdf"
@@ -78,11 +74,10 @@
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
 
-                        <!-- Document 3 : Règlement sur la Concurrence -->
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
-                                    <i class="fa-solid fa-gavel"></i>
+                                    <i class="fa-solid fa-scale-balanced"></i>
                                 </div><!-- service-three-icon -->
                                 <div class="service-three-card-content">
                                     <h3><a href="assets/ODA-PDF/REGLEMENT D’EXECUTION N° 0032018COMUEMOA RELATIF A L’ACTE D’AVOCAT.pdf"
@@ -101,11 +96,10 @@
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
 
-                        <!-- Document 4 : Directive sur les Marchés Publics -->
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
-                                    <i class="fa-solid fa-gavel"></i>
+                                    <i class="fa-solid fa-scale-balanced"></i>
                                 </div><!-- service-three-icon -->
                                 <div class="service-three-card-content">
                                     <h3><a href="assets/ODA-PDF/REGLEMENT D’EXECUTION N° 0012019COMUEMOA RELATIF AU CERTIFICAT D’APTITUDE A LA PROFESSION D’AVOCAT DANS L’ESPACE UEMOA.pdf"
@@ -145,7 +139,6 @@
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
 
-                        <!-- Document 2 : Code des Douanes -->
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
@@ -168,7 +161,7 @@
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
 
-                        <!-- Document 3 : Règlement sur la Concurrence -->
+
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
@@ -193,7 +186,6 @@
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
 
-                        <!-- Document 4 : Directive sur les Marchés Publics -->
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
@@ -217,7 +209,6 @@
                             </div><!-- service-three-card -->
                         </div><!-- col-xxl-4 col-xl-6 -->
 
-                        <!-- Document 5 : Rapport Annuel 2022 -->
                         <div class="col-xxl-4 col-xl-6">
                             <div class="service-three-card">
                                 <div class="service-three-icon">
