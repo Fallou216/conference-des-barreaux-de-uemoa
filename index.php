@@ -822,6 +822,11 @@
     <section class="cta-two-section">
         <div class="container">
             <div class="cta-two-section-inner">
+                <!-- Conteneur pour les messages en haut -->
+                <div class="message-container "
+                    style="position: relative; width: 100%; text-align: center; margin-bottom: 15px; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 16px; display: block;">
+                </div>
+
                 <div class="row">
                     <div class="col-xl-5">
                         <div class="cta-two-title">
@@ -846,38 +851,88 @@
                 </div>
             </div>
         </div>
-    </section>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector(".cta-two-form");
+            const messageDiv = document.querySelector(".message-container");
 
-    <!--cta-two-section-->
-    </div>
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+
+                fetch("vendor/abonnement.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        messageDiv.innerHTML = `<p>${data.message}</p>`;
+                        messageDiv.style.display = "block";
+
+                        if (data.status === "success") {
+                            messageDiv.style.backgroundColor = "#000033"; // Vert
+                            messageDiv.style.color = "#FFFFFF"; // Texte blanc
+                            messageDiv.style.boxShadow = "0px 4px 10px rgba(76, 175, 80, 0.3)";
+                            form.reset();
+                        } else {
+                            messageDiv.style.backgroundColor = "#87CEFA"; // Rouge cerise
+                            messageDiv.style.color = "#FFFFFF"; // Texte blanc (modifié ici)
+                            messageDiv.style.boxShadow = "0px 4px 10px rgba(231, 76, 60, 0.3)";
+                        }
+
+                        // Disparition du message après 5 secondes
+                        setTimeout(() => {
+                            messageDiv.style.display = "none";
+                        }, 5000);
+                    })
+                    .catch(error => {
+                        messageDiv.innerHTML =
+                            `<p>Une erreur est survenue. Veuillez réessayer.</p>`;
+                        messageDiv.style.backgroundColor = "#e74c3c"; // Rouge cerise
+                        messageDiv.style.color = "#FFFFFF"; // Texte blanc (modifié ici)
+                        messageDiv.style.boxShadow = "0px 4px 10px rgba(231, 76, 60, 0.3)";
+                        messageDiv.style.display = "block";
+
+                        setTimeout(() => {
+                            messageDiv.style.display = "none";
+                        }, 5000);
+                    });
+            });
+        });
+        </script>
 
 
-    </div>
-    <!-- End contenu  -->
-    <!-- Footer -->
-    <section class="footer">
-        <?php include ('layouts/footer.php'); ?>
-    </section>
-    <!-- Début de la fenêtre modale de recherche -->
-    <!-- Début de la fenêtre modale de recherche -->
-    <div class="search-popup" role="dialog" aria-modal="true" aria-labelledby="search-title">
-        <div class="search-popup-overlay search-toggler" tabindex="-1"></div>
-        <div class="search-popup-content">
-            <form action="#" method="get" role="search">
-                <label for="search" id="search-title" class="sr-only">Rechercher</label>
-                <input type="text" id="search" name="q" placeholder="Rechercher..." aria-label="Rechercher">
-                <button type="submit" aria-label="Valider la recherche" class="search-btn">
-                    <span><i class="flaticon-search-interface-symbol" aria-hidden="true"></i></span>
-                </button>
-            </form>
+        <!--cta-two-section-->
         </div>
-    </div>
-    <!-- search-popup -->
-    <!-- Pour aller en haut de page... -->
-    <a href="#" class="scroll-to-top scroll-to-target" data-target="html"><i class="fa-solid fa-arrow-up"></i></a>
 
-    <!-- plugins js -->
-    <?php include ('layouts/plugins.php'); ?>
+
+        </div>
+        <!-- End contenu  -->
+        <!-- Footer -->
+        <section class="footer">
+            <?php include ('layouts/footer.php'); ?>
+        </section>
+        <!-- Début de la fenêtre modale de recherche -->
+        <!-- Début de la fenêtre modale de recherche -->
+        <div class="search-popup" role="dialog" aria-modal="true" aria-labelledby="search-title">
+            <div class="search-popup-overlay search-toggler" tabindex="-1"></div>
+            <div class="search-popup-content">
+                <form action="#" method="get" role="search">
+                    <label for="search" id="search-title" class="sr-only">Rechercher</label>
+                    <input type="text" id="search" name="q" placeholder="Rechercher..." aria-label="Rechercher">
+                    <button type="submit" aria-label="Valider la recherche" class="search-btn">
+                        <span><i class="flaticon-search-interface-symbol" aria-hidden="true"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- search-popup -->
+        <!-- Pour aller en haut de page... -->
+        <a href="#" class="scroll-to-top scroll-to-target" data-target="html"><i class="fa-solid fa-arrow-up"></i></a>
+
+        <!-- plugins js -->
+        <?php include ('layouts/plugins.php'); ?>
 </body>
 
 </html>

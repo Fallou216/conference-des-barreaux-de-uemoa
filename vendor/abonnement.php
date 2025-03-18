@@ -5,17 +5,20 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'autoload.php';
 
+header('Content-Type: application/json');
+
 $servername = "localhost";
 $username = "root";  // Remplace par ton utilisateur MySQL
 $password = "";  // Remplace par ton mot de passe MySQL
 $dbname = "conference-des-barreaux-de-uemoa";
+
+$response = [];
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
-        // Récupération et sécurisation de l'email
         $email = htmlspecialchars($_POST['email']);
 
         // Vérifier si l'email existe déjà
@@ -23,7 +26,7 @@ try {
         $stmt->execute([':email' => $email]);
 
         if ($stmt->rowCount() > 0) {
-            echo "<div class='error'><p>Cet email est déjà abonné !</p></div>";
+            $response = ['status' => 'error', 'message' => 'Cet email est déjà abonné !'];
         } else {
             // Insérer l'email dans la base de données
             $stmt = $conn->prepare("INSERT INTO abonnements (email) VALUES (:email)");
@@ -47,48 +50,25 @@ try {
             $mail->Subject = "Confirmation d'abonnement";
             $mail->Body = "
                 <html>
-                <head>
-                    <style>
-                        .email-container {
-                            font-family: Arial, sans-serif;
-                            line-height: 1.6;
-                            color: #333333;
-                            max-width: 600px;
-                            margin: 0 auto;
-                            padding: 20px;
-                            border: 1px solid #dddddd;
-                            border-radius: 10px;
-                            background-color: #f9f9f9;
-                        }
-                        .email-container h2 {
-                            color: #444444;
-                            font-size: 24px;
-                            margin-bottom: 20px;
-                        }
-                        .email-container p {
-                            margin: 10px 0;
-                            font-size: 16px;
-                        }
-                    </style>
-                </head>
                 <body>
-                    <div class='email-container'>
-                        <h2>Merci pour votre abonnement au conference des barreaux de l'uemoa!</h2>
-                        <p>Vous êtes maintenant abonné à nos notifications.</p>
-                    </div>
+                    <p>Merci pour votre abonnement au conference des barreaux de l'uemoa!</p>
+                    <p>Vous êtes maintenant abonné à nos notifications.</p>
                 </body>
                 </html>
             ";
 
             if ($mail->send()) {
-                echo "<div class='success'><p>Votre abonnement a été pris en compte. Un e-mail de confirmation vous a été envoyé.</p></div>";
+                $response = ['status' => 'success', 'message' => 'Votre abonnement a été pris en compte. Un e-mail de confirmation vous a été envoyé.'];
             } else {
-                echo "<div class='error'><p>Erreur lors de l'envoi de l'email de confirmation.</p></div>";
+                $response = ['status' => 'error', 'message' => 'Erreur lors de l\'envoi de l\'email de confirmation.'];
             }
         }
     }
 } catch (Exception $e) {
-    echo "<div class='error'><p>Erreur lors de l'inscription : " . $e->getMessage() . "</p></div>";
+    $response = ['status' => 'error', 'message' => 'Erreur lors de l\'inscription : ' . $e->getMessage()];
 }
+
+echo json_encode($response);
+exit;
 
 ?>
