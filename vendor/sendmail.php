@@ -1,21 +1,22 @@
-<?php
+<?php 
+session_start(); // Démarrage de la session pour éviter la double soumission
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'autoload.php';
 
-// Connexion à la base de données (à modifier selon tes paramètres)
+// Connexion à la base de données
 $servername = "localhost";
-$username = "root";  // Remplace par ton utilisateur MySQL
-$password = "";  // Remplace par ton mot de passe MySQL
+$username = "root";  
+$password = "";  
 $dbname = "conference-des-barreaux-de-uemoa";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && !isset($_SESSION['form_submitted'])) {
         // Récupération et sécurisation des données du formulaire
         $name = htmlspecialchars($_POST['name']);
         $email = htmlspecialchars($_POST['email']);
@@ -39,7 +40,7 @@ try {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'falloudioum216@gmail.com'; // Ton adresse email
-        $mail->Password = 'drpf yczi nrte myqt'; // Utiliser une clé d'application Gmail
+        $mail->Password = 'drpf yczi nrte myqt'; // Clé d'application Gmail
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         $mail->CharSet = 'UTF-8';
@@ -48,64 +49,70 @@ try {
         $mail->addAddress('falloudioum216@gmail.com', 'Mamadou Fallou Dioum');
 
         $mail->isHTML(true);
-$mail->Subject = "Nouveau message de contact: $subject"; // Sujet de l'e-mail
-$mail->Body = "
-    <html>
-    <head>
-        <style>
-            .email-container {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                color: #333333;
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 20px;
-                border: 1px solid #dddddd;
-                border-radius: 10px;
-                background-color: #f9f9f9;
-            }
-            .email-container h2 {
-                color: #444444;
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-            .email-container p {
-                margin: 10px 0;
-                font-size: 16px;
-            }
-            .email-container strong {
-                color: #555555;
-                font-weight: bold;
-            }
-            .email-container .message {
-                background-color: #ffffff;
-                padding: 15px;
-                border: 1px solid #dddddd;
-                border-radius: 5px;
-                margin-top: 15px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class='email-container'>
-            <h2>Nouveau message de contact</h2>
-            <p><strong>Sujet:</strong> $subject</p>
-            <p><strong>Nom:</strong> $name</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Téléphone:</strong> $phone</p>
-            <div class='message'>
-                <p><strong>Message:</strong></p>
-                <p>$message</p>
-            </div>
-        </div>
-    </body>
-    </html>
-";
+        $mail->Subject = "Nouveau message de contact: $subject";
+        $mail->Body = "
+            <html>
+            <head>
+                <style>
+                    .email-container {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        color: #333333;
+                        max-width: 600px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        border: 1px solid #dddddd;
+                        border-radius: 10px;
+                        background-color: #f9f9f9;
+                    }
+                    .email-container h2 {
+                        color: #444444;
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    .email-container p {
+                        margin: 10px 0;
+                        font-size: 16px;
+                    }
+                    .email-container strong {
+                        color: #555555;
+                        font-weight: bold;
+                    }
+                    .email-container .message {
+                        background-color: #ffffff;
+                        padding: 15px;
+                        border: 1px solid #dddddd;
+                        border-radius: 5px;
+                        margin-top: 15px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class='email-container'>
+                    <h2>Nouveau message de contact</h2>
+                    <p><strong>Sujet:</strong> $subject</p>
+                    <p><strong>Nom:</strong> $name</p>
+                    <p><strong>Email:</strong> $email</p>
+                    <p><strong>Téléphone:</strong> $phone</p>
+                    <div class='message'>
+                        <p><strong>Message:</strong></p>
+                        <p>$message</p>
+                    </div>
+                </div>
+            </body>
+            </html>
+        ";
 
-        $mail->send();
-        echo "<div class='success'><p>Votre message a été envoyé avec succès !</p></div>";
+        if ($mail->send()) {
+            $_SESSION['form_submitted'] = true; // Empêche la double soumission
+            echo "<div class='success'><p>Votre message a été envoyé avec succès !</p></div>";
+        } else {
+            echo "<div class='error'><p>Erreur lors de l'envoi de l'email.</p></div>";
+        }
+
+        exit(); // Arrête l'exécution pour éviter une double soumission
     }
 } catch (Exception $e) {
-    echo "<div class='error'><p>Erreur lors de l'envoi du message: " . $e->getMessage() . "</p></div>";
+    echo "<div class='error'><p>Erreur: " . $e->getMessage() . "</p></div>";
 }
 ?>

@@ -92,9 +92,7 @@
                 <!--item-->
             </div><!-- main-slider-two-swiper -->
         </section>
-
         <!--main-slider-->
-
         <!-- Section des actualités récentes -->
         <section class="blog-section">
             <div class="container">

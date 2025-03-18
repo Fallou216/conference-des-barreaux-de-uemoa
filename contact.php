@@ -144,131 +144,137 @@ try {
                             <div id="message" class="message"></div>
                         </div>
 
-                        <form action="vendor/sendmail.php" class="contact-form contact-form-validated" method="post">
+                        <form id="contactForm" action="vendor/sendmail.php" class="contact-form contact-form-validated"
+                            method="post" onsubmit="disableSubmitButton()">
                             <div class="row row-gutter-10">
                                 <div class="col-12 col-lg-6">
                                     <input type="text" id="name" class="input-text" placeholder="Votre nom" name="name"
-                                        aria-required="true">
+                                        required>
                                 </div><!-- col-12 col-lg-6 -->
                                 <div class="col-12 col-lg-6">
                                     <input type="email" id="email" class="input-text" placeholder="Adresse e-mail"
-                                        name="email" aria-required="true">
+                                        name="email" required>
                                 </div><!-- col-12 col-lg-6 -->
                                 <div class="col-12 col-lg-6">
                                     <input type="text" id="phone" class="input-text" placeholder="Numéro de téléphone"
-                                        name="phone" aria-required="true">
+                                        name="phone" required>
                                 </div><!-- col-12 col-lg-6 -->
                                 <div class="col-12 col-lg-6">
                                     <input type="text" id="subject" class="input-text" placeholder="Sujet"
-                                        name="subject" aria-required="true">
+                                        name="subject" required>
                                 </div><!-- col-12 col-lg-6 -->
                                 <div class="col-12 col-lg-12">
                                     <textarea name="message" placeholder="Écrivez votre message" class="input-text"
-                                        aria-required="true"></textarea>
+                                        required></textarea>
                                 </div><!-- col-12 col-lg-12 -->
                                 <div class="col-12 col-lg-12">
-                                    <button class="btn btn-primary">
+                                    <button id="submitBtn" type="submit" class="btn btn-primary">
                                         <i class="fas fa-paper-plane"></i> Envoyer le message
                                     </button>
-
                                 </div><!-- col-12 col-lg-12 -->
                             </div><!-- row -->
-                        </form><!-- contact-form -->
-                    </div>
+                        </form>
 
-                    <style>
-                    /* Styles pour les messages */
-                    #message-container {
-                        margin-bottom: 20px;
-                        /* Espace entre les messages et le formulaire */
-                    }
+                        <script>
+                        function disableSubmitButton() {
+                            document.getElementById("submitBtn").disabled = true;
+                        }
+                        </script>
 
-                    .message {
-                        padding: 15px;
-                        border-radius: 5px;
-                        color: white;
-                        font-size: 16px;
-                        margin-bottom: 10px;
-                        opacity: 1;
-                        transition: opacity 0.5s ease-in-out;
-                    }
 
-                    .message.success {
-                        background-color: #4CAF50;
-                        /* Vert */
-                    }
+                        <style>
+                        /* Styles pour les messages */
+                        #message-container {
+                            margin-bottom: 20px;
+                            /* Espace entre les messages et le formulaire */
+                        }
 
-                    .message.error {
-                        background-color: #f44336;
-                        /* Rouge */
-                    }
+                        .message {
+                            padding: 15px;
+                            border-radius: 5px;
+                            color: white;
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                            opacity: 1;
+                            transition: opacity 0.5s ease-in-out;
+                        }
 
-                    /* Styles pour le formulaire (couleurs d'origine) */
-                    .btn-primary {
-                        background-color: var(--thm-primary);
-                        /* Couleur bleue d'origine */
-                        color: white;
-                        padding: 10px 20px;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                    }
+                        .message.success {
+                            background-color: #4CAF50;
+                            /* Vert */
+                        }
 
-                    .btn-primary:hover {
-                        background-color: var(--thm-black);
-                        /* Couleur bleue plus foncée au survol */
-                    }
-                    </style>
+                        .message.error {
+                            background-color: #f44336;
+                            /* Rouge */
+                        }
 
-                    <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const form = document.querySelector('.contact-form');
-                        const messageContainer = document.getElementById('message-container');
-                        const message = document.getElementById('message');
+                        /* Styles pour le formulaire (couleurs d'origine) */
+                        .btn-primary {
+                            background-color: var(--thm-primary);
+                            /* Couleur bleue d'origine */
+                            color: white;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
 
-                        form.addEventListener('submit', function(event) {
-                            event.preventDefault();
+                        .btn-primary:hover {
+                            background-color: var(--thm-black);
+                            /* Couleur bleue plus foncée au survol */
+                        }
+                        </style>
 
-                            // Simuler une soumission de formulaire réussie ou une erreur
-                            const formData = new FormData(form);
-                            fetch(form.action, {
-                                    method: form.method,
-                                    body: formData,
-                                })
-                                .then(response => {
-                                    if (response.ok) {
-                                        showMessage('Votre message a été envoyé avec succès!',
-                                            'success');
-                                    } else {
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const form = document.querySelector('.contact-form');
+                            const messageContainer = document.getElementById('message-container');
+                            const message = document.getElementById('message');
+
+                            form.addEventListener('submit', function(event) {
+                                event.preventDefault();
+
+                                // Simuler une soumission de formulaire réussie ou une erreur
+                                const formData = new FormData(form);
+                                fetch(form.action, {
+                                        method: form.method,
+                                        body: formData,
+                                    })
+                                    .then(response => {
+                                        if (response.ok) {
+                                            showMessage('Votre message a été envoyé avec succès!',
+                                                'success');
+                                        } else {
+                                            showMessage(
+                                                'Une erreur s\'est produite lors de l\'envoi du message.',
+                                                'error');
+                                        }
+                                    })
+                                    .catch(() => {
                                         showMessage(
                                             'Une erreur s\'est produite lors de l\'envoi du message.',
                                             'error');
-                                    }
-                                })
-                                .catch(() => {
-                                    showMessage(
-                                        'Une erreur s\'est produite lors de l\'envoi du message.',
-                                        'error');
-                                });
+                                    });
 
-                            // Réinitialiser le formulaire après la soumission
-                            form.reset();
+                                // Réinitialiser le formulaire après la soumission
+                                form.reset();
+                            });
+
+                            function showMessage(text, type) {
+                                message.textContent = text;
+                                message.className = 'message ' + type;
+                                messageContainer.style.display = 'block';
+
+                                // Faire disparaître le message après 10 secondes
+                                setTimeout(function() {
+                                    messageContainer.style.display = 'none';
+                                }, 10000);
+                            }
                         });
-
-                        function showMessage(text, type) {
-                            message.textContent = text;
-                            message.className = 'message ' + type;
-                            messageContainer.style.display = 'block';
-
-                            // Faire disparaître le message après 10 secondes
-                            setTimeout(function() {
-                                messageContainer.style.display = 'none';
-                            }, 10000);
-                        }
-                    });
-                    </script>
-                </div><!-- row -->
-            </div><!-- container -->
+                        </script>
+                    </div><!-- row -->
+                </div><!-- container -->
         </section><!-- contact-section -->
         <div class="contact-gmap-section">
             <div class="container">
