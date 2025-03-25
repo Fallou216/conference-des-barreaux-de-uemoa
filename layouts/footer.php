@@ -41,7 +41,6 @@
                 <!--footer-widget-->
             </div>
             <!--col-lg-3-->
-
             <!-- Colonne Gouvernance -->
             <div class="col-lg-2">
                 <div class="footer-widget">
@@ -57,7 +56,6 @@
                 <!--footer-widget-->
             </div>
             <!--col-lg-2-->
-
             <!-- Colonne Contact -->
             <div class="col-lg-3">
                 <div class="footer-widget">
@@ -88,11 +86,8 @@
     </div><!-- container -->
 </div>
 <!--footer-inner-->
-
 <div class="bottom-footer">
     <div class="container">
         <p>© 2024 Conférence des Barreaux de l'Espace UEMOA. Tous droits réservés.</p>
     </div><!-- container -->
 </div>
-
-<!--bottom-footer-->

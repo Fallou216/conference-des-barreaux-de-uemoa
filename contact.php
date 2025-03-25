@@ -324,9 +324,6 @@ try {
                                     <a href="https://x.com/UEMOA_Officiel"><i class="fa-brands fa-twitter"></i></a>
                                     <a href="https://www.facebook.com/UEMOAOfficielle/?locale=fr_FR"><i
                                             class="fa-brands fa-facebook"></i></a>
-                                    <a
-                                        href="https://www.google.com/search?q=page+pinterest+de+uemoa&oq=page+pinterest+de+uemoa&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDYzMzlqMGo0qAIGsAIB8QV5NmMvHBxBiQ&sourceid=chrome&ie=UTF-8"><i
-                                            class="fa-brands fa-pinterest-p"></i></a>
                                     <a href="https://www.instagram.com/uemoaofficiel/"><i
                                             class="fa-brands fa-instagram"></i></a>
                                 </div><!-- cta-four-widget-socials -->

@@ -167,10 +167,6 @@
                                         class="social-icon">
                                         <i class="fa-brands fa-facebook"></i>
                                     </a>
-                                    <a href="https://www.google.com/search?q=page+pinterest+de+uemoa&oq=page+pinterest+de+uemoa&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDYzMzlqMGo0qAIGsAIB8QV5NmMvHBxBiQ&sourceid=chrome&ie=UTF-8"
-                                        class="social-icon">
-                                        <i class="fa-brands fa-pinterest-p"></i>
-                                    </a>
                                     <a href="https://www.instagram.com/uemoaofficiel/" class="social-icon">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>

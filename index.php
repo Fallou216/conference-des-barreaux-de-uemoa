@@ -759,152 +759,177 @@
             </div>
             <div class="row">
                 <!-- Article 1 -->
-                <div class="col-lg-4">
-                    <div class="blog-card">
+                <div class="col-lg-4 mb-4">
+                    <div class="blog-card h-100 d-flex flex-column">
                         <div class="blog-card-image">
-                            <img src="assets/image/CDBU1.png" class="img-fluid" alt="3e Congrès des Avocats de l’UEMOA">
-                            <a href="news.php"></a>
+                            <img src="assets/image/CDBU1.png" class="img-fluid w-100"
+                                style="height: 200px; object-fit: cover;" alt="3e Congrès des Avocats de l'UEMOA">
+                            <a href="news-details-1.php"></a>
                         </div>
                         <div class="blog-card-date">
-                            <a href="news.php">20 SEP 2024</a>
+                            <a href="news-details-1.php">20 SEP 2024</a>
                         </div>
-                        <div class="blog-card-content">
-                            <h4><a href="news.php">3e Congrès des Avocats de l’UEMOA : Bilan de dix ans
+                        <div class="blog-card-content flex-grow-1">
+                            <h4><a href="news-details-1.php">3e Congrès des Avocats de l'UEMOA : Bilan de dix ans
                                     d'application du Règlement n°05</a></h4>
-                            <p>Le 3e Congrès des Avocats de l'UEMOA s'est tenu à Abidjan, réunissant des avocats des
-                                huit pays membres pour évaluer une décennie d'harmonisation des pratiques
-                                professionnelles.</p>
+                            <p class="mb-3"
+                                style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
+                                Le 3e Congrès des Avocats de l'UEMOA s'est tenu à Abidjan, réunissant des avocats
+                                des huit pays membres pour évaluer une décennie d'harmonisation des pratiques
+                                professionnelles...
+                            </p>
+                            <a href="news-details-1.php" class="btn btn-primary">
+                                <i class="fas fa-eye ms-2"></i> voir plus
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Article 2 -->
-                <div class="col-lg-4">
-                    <div class="blog-card">
+                <div class="col-lg-4 mb-4">
+                    <div class="blog-card h-100 d-flex flex-column">
                         <div class="blog-card-image">
-                            <img src="assets/image/CDBU1.png" class="img-fluid" alt="Recommandations du Congrès 2024">
-                            <a href="news.php"></a>
+                            <img src="assets/image/CDBU1.png" class="img-fluid w-100"
+                                style="height: 200px; object-fit: cover;" alt="Recommandations du Congrès 2024">
+                            <a href="news-details-2.php"></a>
                         </div>
                         <div class="blog-card-date">
-                            <a href="news.php">21 SEP 2024</a>
+                            <a href="news-details-2.php">21 SEP 2024</a>
                         </div>
-                        <div class="blog-card-content">
-                            <h4><a href="news.php">Cinq recommandations pour l'avenir de la profession
+                        <div class="blog-card-content flex-grow-1">
+                            <h4><a href="news-details-2.php">Cinq recommandations pour l'avenir de la profession
                                     d'avocat dans l'UEMOA</a></h4>
-                            <p>À l'issue du congrès, cinq recommandations clés ont été formulées pour améliorer
-                                l’exercice de la profession dans l’espace communautaire.</p>
+                            <p class="mb-3"
+                                style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
+                                À l'issue du congrès, cinq recommandations clés ont été formulées pour améliorer
+                                l'exercice de la profession dans l'espace communautaire...
+                            </p>
+                            <a href="news-details-2.php" class="btn btn-primary">
+                                <i class="fas fa-eye ms-2"></i> voir plus
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Article 3 -->
-                <div class="col-lg-4">
-                    <div class="blog-card">
+                <div class="col-lg-4 mb-4">
+                    <div class="blog-card h-100 d-flex flex-column">
                         <div class="blog-card-image">
-                            <img src="assets/image/CDBU1.png" class="img-fluid"
-                                alt="Rentrée judiciaire de la Cour de Justice de l’UEMOA">
-                            <a href="news.php"></a>
+                            <img src="assets/image/CDBU1.png" class="img-fluid w-100"
+                                style="height: 200px; object-fit: cover;"
+                                alt="Rentrée judiciaire de la Cour de Justice de l'UEMOA">
+                            <a href="news-details-3.php"></a>
                         </div>
                         <div class="blog-card-date">
-                            <a href="news.php">20 DÉC 2023</a>
+                            <a href="news-details-3.php">20 DÉC 2023</a>
                         </div>
-                        <div class="blog-card-content">
-                            <h4><a href="news.php">Rentrée judiciaire de la Cour de Justice de l’UEMOA</a>
+                        <div class="blog-card-content flex-grow-1">
+                            <h4><a href="news-details-3.php">Rentrée judiciaire de la Cour de Justice de l'UEMOA</a>
                             </h4>
-                            <p>L'audience solennelle de la rentrée judiciaire s'est déroulée à Ouagadougou, abordant les
-                                activités non judiciaires de la Cour.</p>
+                            <p class="mb-3"
+                                style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
+                                L'audience solennelle de la rentrée judiciaire s'est déroulée à Ouagadougou,
+                                abordant les activités non judiciaires de la Cour...
+                            </p>
+                            <a href="news-details-3.php" class="btn btn-primary">
+                                <i class="fas fa-eye ms-2"></i> voir plus
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- blog-section -->
+                <!-- blog-section -->
 
-    <section class="cta-two-section">
-        <div class="container">
-            <div class="cta-two-section-inner">
-                <!-- Conteneur pour les messages en haut -->
-                <div class="message-container "
-                    style="position: relative; width: 100%; text-align: center; margin-bottom: 15px; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 16px; display: block;">
-                </div>
-
-                <div class="row">
-                    <div class="col-xl-5">
-                        <div class="cta-two-title">
-                            <div class="cta-two-card-icon">
-                                <i class="flaticon-envelope-2"></i>
+                <section class="cta-two-section">
+                    <div class="container">
+                        <div class="cta-two-section-inner">
+                            <!-- Conteneur pour les messages en haut -->
+                            <div class="message-container "
+                                style="position: relative; width: 100%; text-align: center; margin-bottom: 15px; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 16px; display: block;">
                             </div>
-                            <div class="cta-two-card-content">
-                                <p>Restez informé</p>
-                                <h3>Abonnez-vous à notre newsletter</h3>
+
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="cta-two-title">
+                                        <div class="cta-two-card-icon">
+                                            <i class="flaticon-envelope-2"></i>
+                                        </div>
+                                        <div class="cta-two-card-content">
+                                            <p>Restez informé</p>
+                                            <h3>Abonnez-vous à notre newsletter</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7">
+                                    <form action="vendor/abonnement.php" class="cta-two-form" method="post">
+                                        <div class="cta-two-form-group">
+                                            <input type="email" id="email" class="input-text"
+                                                placeholder="Adresse e-mail" name="email" required>
+                                        </div>
+                                        <button class="btn btn-primary">S'abonner</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7">
-                        <form action="vendor/abonnement.php" class="cta-two-form" method="post">
-                            <div class="cta-two-form-group">
-                                <input type="email" id="email" class="input-text" placeholder="Adresse e-mail"
-                                    name="email" required>
-                            </div>
-                            <button class="btn btn-primary">S'abonner</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.querySelector(".cta-two-form");
-            const messageDiv = document.querySelector(".message-container");
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const form = document.querySelector(".cta-two-form");
+                        const messageDiv = document.querySelector(".message-container");
 
-            form.addEventListener("submit", function(e) {
-                e.preventDefault();
+                        form.addEventListener("submit", function(e) {
+                            e.preventDefault();
 
-                const formData = new FormData(form);
+                            const formData = new FormData(form);
 
-                fetch("vendor/abonnement.php", {
-                        method: "POST",
-                        body: formData
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        messageDiv.innerHTML = `<p>${data.message}</p>`;
-                        messageDiv.style.display = "block";
+                            fetch("vendor/abonnement.php", {
+                                    method: "POST",
+                                    body: formData
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    messageDiv.innerHTML = `<p>${data.message}</p>`;
+                                    messageDiv.style.display = "block";
 
-                        if (data.status === "success") {
-                            messageDiv.style.backgroundColor = "#000033"; // Vert
-                            messageDiv.style.color = "#FFFFFF"; // Texte blanc
-                            messageDiv.style.boxShadow = "0px 4px 10px rgba(76, 175, 80, 0.3)";
-                            form.reset();
-                        } else {
-                            messageDiv.style.backgroundColor = "#87CEFA"; // Rouge cerise
-                            messageDiv.style.color = "#FFFFFF"; // Texte blanc (modifié ici)
-                            messageDiv.style.boxShadow = "0px 4px 10px rgba(231, 76, 60, 0.3)";
-                        }
+                                    if (data.status === "success") {
+                                        messageDiv.style.backgroundColor = "#000033"; // Vert
+                                        messageDiv.style.color = "#FFFFFF"; // Texte blanc
+                                        messageDiv.style.boxShadow =
+                                            "0px 4px 10px rgba(76, 175, 80, 0.3)";
+                                        form.reset();
+                                    } else {
+                                        messageDiv.style.backgroundColor =
+                                        "#B0EFFF"; // Rouge cerise
+                                        messageDiv.style.color =
+                                        "#FFFFFF"; // Texte blanc (modifié ici)
+                                        messageDiv.style.boxShadow =
+                                            "0px 4px 10px rgba(231, 76, 60, 0.3)";
+                                    }
 
-                        // Disparition du message après 5 secondes
-                        setTimeout(() => {
-                            messageDiv.style.display = "none";
-                        }, 5000);
-                    })
-                    .catch(error => {
-                        messageDiv.innerHTML =
-                            `<p>Une erreur est survenue. Veuillez réessayer.</p>`;
-                        messageDiv.style.backgroundColor = "#e74c3c"; // Rouge cerise
-                        messageDiv.style.color = "#FFFFFF"; // Texte blanc (modifié ici)
-                        messageDiv.style.boxShadow = "0px 4px 10px rgba(231, 76, 60, 0.3)";
-                        messageDiv.style.display = "block";
+                                    // Disparition du message après 5 secondes
+                                    setTimeout(() => {
+                                        messageDiv.style.display = "none";
+                                    }, 5000);
+                                })
+                                .catch(error => {
+                                    messageDiv.innerHTML =
+                                        `<p>Une erreur est survenue. Veuillez réessayer.</p>`;
+                                    messageDiv.style.backgroundColor = "#e74c3c"; // Rouge cerise
+                                    messageDiv.style.color = "#FFFFFF"; // Texte blanc (modifié ici)
+                                    messageDiv.style.boxShadow =
+                                        "0px 4px 10px rgba(231, 76, 60, 0.3)";
+                                    messageDiv.style.display = "block";
 
-                        setTimeout(() => {
-                            messageDiv.style.display = "none";
-                        }, 5000);
+                                    setTimeout(() => {
+                                        messageDiv.style.display = "none";
+                                    }, 5000);
+                                });
+                        });
                     });
-            });
-        });
-        </script>
+                    </script>
 
 
-        <!--cta-two-section-->
-        </div>
+                    <!--cta-two-section-->
+            </div>
 
 
         </div>
